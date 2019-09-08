@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/ServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/DispatcherServletConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/FilterConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/JacksonObjectMapperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/ServiceContextConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/context/ApplicationContextProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/BaseApiEndpoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/mapper/ExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/filter/ApiKeyFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/services/OfyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
@@ -104,31 +87,7 @@
         <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/services/UtilityServices.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="53" column="73" lean-forward="true" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppEndpoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactEndpoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -137,25 +96,16 @@
         <entry file="file://$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/appengine-web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonConstants.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommonConstants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="240">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -163,17 +113,31 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Api/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+            <state relative-caret-position="-559">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Auth/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="-664" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-259" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Default/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -182,9 +146,14 @@
         <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-210">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appengine-web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -1515,9 +1484,9 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/.gradle/gradle.properties" value="439289383" />
-        <entry key="$PROJECT_DIR$" value="14096669107000" />
+        <entry key="$PROJECT_DIR$" value="14096670135000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/Api/build.gradle" value="2078134085" />
+        <entry key="$PROJECT_DIR$/Api/build.gradle" value="2550597671" />
         <entry key="$PROJECT_DIR$/Auth/build.gradle" value="2328273257" />
         <entry key="$PROJECT_DIR$/Commons/build.gradle" value="2797652885" />
         <entry key="$PROJECT_DIR$/Default/build.gradle" value="804192814" />
@@ -1957,6 +1926,51 @@
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -2339,7 +2353,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3982808" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.39111748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.45272207" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295129" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" weight="0.43982807" />
       <window_info id="Capture Tool" order="2" />
@@ -2378,6 +2392,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.6460606" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3295129" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49921876" weight="0.3295129" />
       <window_info anchor="right" id="Gradle" order="3" sideWeight="0.49856734" visible="true" weight="0.1874106" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -2392,7 +2407,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/KeyService.java</url>
-          <line>53</line>
+          <line>51</line>
           <properties class="com.commons.services.KeyService">
             <option name="EMULATED" value="true" />
           </properties>
@@ -2539,13 +2554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/services/OfyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/services/OfyService.java" />
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -2563,13 +2572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/context/ApplicationContextProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/context/ApplicationContextProvider.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/constants/ApiConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2577,13 +2580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/BaseApiEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/BaseApiEndpoint.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -2614,7 +2611,7 @@
     <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-210">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -2628,14 +2625,14 @@
     <entry file="file://$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/appengine-web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Api/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        <state relative-caret-position="-559">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -2649,14 +2646,14 @@
     <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/services/UtilityServices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="53" column="73" lean-forward="true" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
+          <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="240">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>

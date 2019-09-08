@@ -2,9 +2,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from '../react/components/app'
-
-
+import { Provider } from "react-redux";
+import store from './store/store';
  
 ReactDOM.render(
-    <App/>, document.getElementById("auth-app"));
+    <Provider store={store}>
+    <App/></Provider>, document.getElementById("auth-app"));
 
