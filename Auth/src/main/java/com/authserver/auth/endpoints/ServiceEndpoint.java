@@ -2,7 +2,6 @@ package com.authserver.auth.endpoints;
 
 
 import com.commons.DaoImplServices.AppDaoImpl;
-import com.commons.annotations.ApiKeyCheck;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.entity.App;
 import com.commons.services.FreeMarkerService;

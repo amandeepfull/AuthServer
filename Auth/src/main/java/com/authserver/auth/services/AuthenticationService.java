@@ -1,21 +1,15 @@
-package com.commons.services;
+package com.authserver.auth.services;
 
-import com.commons.Dao.TokenDao;
+import com.authserver.auth.constants.AuthConstants;
 import com.commons.DaoImplServices.AppDaoImpl;
 import com.commons.DaoImplServices.ContactDaoImpl;
-import com.commons.DaoImplServices.TokenDaoImpl;
-import com.commons.Enum.ReservedClaims;
-import com.commons.constants.CommonConstants;
 import com.commons.entity.App;
 import com.commons.entity.Contact;
-import com.commons.http.HttpMethod;
-import com.commons.http.HttpRequest;
-import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.entity.Token;
-import com.commons.requests.TokenRequest;
+import com.commons.services.JWTService;
+import com.commons.services.MCacheService;
 import com.commons.utils.*;
-import lombok.extern.slf4j.Slf4j;
 import org.jose4j.jwt.JwtClaims;
 import org.jose4j.jwt.MalformedClaimException;
 
@@ -26,13 +20,8 @@ import javax.ws.rs.ForbiddenException;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
-import java.lang.invoke.MethodType;
-import java.lang.reflect.Method;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-@Slf4j
 public class AuthenticationService extends OfyService {
 
 
@@ -133,7 +122,7 @@ public class AuthenticationService extends OfyService {
         Preconditions.checkArgument(loginUser == null || (!loginUser.getPassword().equals(contact.getPassword())), "Invalid credentials");
 
 
-        String authCode = JWTService.getInstance().createAuthToken(clientId, loginUser.getEmail(), CommonConstants.AUTH_CODE_EXPIRE_MIN);
+        String authCode = JWTService.getInstance().createAuthToken(clientId, loginUser.getEmail(), AuthConstants.AUTH_CODE_EXPIRE_MIN);
 
         MCacheService.getInstance().put(authCode, true, 60);
 

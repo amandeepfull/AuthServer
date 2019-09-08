@@ -1,28 +1,19 @@
-package com.commons.DaoImplServices;
+package com.authserver.auth.services;
 
+import com.authserver.auth.constants.AuthConstants;
 import com.commons.Dao.TokenDao;
 import com.commons.Enum.TokenType;
-import com.commons.constants.CommonConstants;
-import com.commons.entity.Contact;
 import com.commons.entity.Token;
-import com.commons.http.HttpMethod;
-import com.commons.http.HttpRequest;
-import com.commons.http.HttpResponse;
-import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.services.JWTService;
 import com.commons.utils.HashUtil;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
 import com.commons.utils.RandomUtil;
-import lombok.extern.slf4j.Slf4j;
 
 import javax.ws.rs.NotFoundException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-@Slf4j
 public class TokenDaoImpl extends OfyService implements TokenDao {
 
     private final long oneDayMilli = 86400000;
@@ -32,7 +23,7 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
 
 
 
-       String accessToken = JWTService.getInstance().createUserAccessToken(clientId, userName, scopes, CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
+       String accessToken = JWTService.getInstance().createUserAccessToken(clientId, userName, scopes, AuthConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
 
         if(accessToken == null )
             return null;
@@ -60,7 +51,7 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
             throw new NotFoundException("refresh token not found");
 
 
-         String accessToken = JWTService.getInstance().createUserAccessToken(token.getIssuedTo(), token.getUserName(), token.getScopes(), CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
+         String accessToken = JWTService.getInstance().createUserAccessToken(token.getIssuedTo(), token.getUserName(), token.getScopes(), AuthConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
 
         if(accessToken == null)
             return null;
@@ -86,29 +77,7 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
 
 
     //// todo needs to put in sdk
-    public Token getByTokenFromRemote(String accessToken) {
 
-        Preconditions.checkArgument(ObjUtil.isBlank(accessToken), "access token cannot be null/empty");
-
-        try {
-            HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_AUTH_URL + "/o/token/"+accessToken , HttpMethod.GET);
-
-            request.addHeader("Authorization", "ApiKey="+CommonConstants.AUTH_API_KEY);
-            HttpResponse response = UrlFetcher.makeRequest(request);
-            if (!response.wasSuccessful()) {
-                log.error("error response : " + response.getResponseContent());
-                return null;
-            }
-
-            Map<String, Object> apiResponse = ObjUtil.getMapFromJson(response.getResponseContent());
-
-            return ObjUtil.safeConvertMap((Map<String, Object>) ((Map<String, Object>) apiResponse.get("data")).get("token"), Token.class);
-        } catch (Exception e) {
-            log.error("exception while fetching contact by Id from remote : ", e.getMessage(), e);
-            return null;
-        }
-
-    }
 
 
     private static class TokenDaoImplInitializer {

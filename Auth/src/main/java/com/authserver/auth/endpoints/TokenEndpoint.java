@@ -1,8 +1,7 @@
 package com.authserver.auth.endpoints;
 
-import com.commons.DaoImplServices.TokenDaoImpl;
+import com.authserver.auth.services.TokenDaoImpl;
 import com.commons.Enum.EntityErrorCode;
-import com.commons.annotations.ApiKeyCheck;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.entity.Token;
 import com.commons.exception.EntityException;
@@ -10,7 +9,7 @@ import com.commons.exception.ForbiddenException;
 import com.commons.requests.TokenRequest;
 import com.commons.response.ApiResponse;
 import com.commons.response.TokenResponse;
-import com.commons.services.AuthenticationService;
+import com.authserver.auth.services.AuthenticationService;
 import com.commons.utils.Preconditions;
 import org.jose4j.jwt.MalformedClaimException;
 

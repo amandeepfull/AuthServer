@@ -1,12 +1,10 @@
 package com.authserver.app.endpoints;
 
-import com.commons.DaoImplServices.ContactDaoImpl;
-import com.commons.DaoImplServices.TokenDaoImpl;
+import com.authserver.app.services.UtilityServices;
 import com.commons.Enum.OauthCaterScopes;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.constants.CommonConstants;
 import com.commons.entity.Contact;
-import com.commons.entity.Token;
 import com.commons.http.HttpMethod;
 import com.commons.http.HttpRequest;
 import com.commons.http.HttpResponse;
@@ -37,7 +35,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-@Slf4j
 @Path("/")
 public class MainEndpoint extends AbstractBaseEndpoint {
 
@@ -58,8 +55,8 @@ public class MainEndpoint extends AbstractBaseEndpoint {
         }
 
 
-        FreeMarkerService.writeHtmlResponse(servletResponse, 200, AppUtils.getJspPagesPath("dashboard"), null);
 
+        servletRequest.getRequestDispatcher(AppUtils.getJspPagesPath("dashboard")).forward(servletRequest, servletResponse);
         return null;
     }
 
@@ -147,8 +144,8 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 ////////// ........................................  SDK process .....................................
 
 
-        // may be from our db or any contact management app, it is upto choice registered app
-        Contact contact = ContactDaoImpl.getInstance().getByUnameFromRemote(claims.getSubject());
+        // may be from our db or any contact management app, it is upto choice registe  red app
+        Contact contact = UtilityServices.getInstance().getContactByUname(claims.getSubject());
 
 
         if(contact == null)
@@ -160,6 +157,7 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 
 
         return AppUtils.getRedirectUriResponse("/dashboard");
+
 
     }
 
