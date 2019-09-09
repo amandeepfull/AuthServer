@@ -1,5 +1,5 @@
 import React from 'react'
-import LeftSideBar from "./Left-Side-Bar"
+import LeftSideBar from "../containers/left-side-bar"
 import RightSideBar from "./Right-Side-Bar"
 import NewAppPopup from './popups/NewAppPopup'
 

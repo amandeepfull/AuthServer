@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/App-In-top-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/App-In-top-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/MainBottomView.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/MainBottomView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/AppInViewIconBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/AppInViewIconBase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/reducers/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/reducers/ui.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
@@ -136,7 +135,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Default/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
+            <state relative-caret-position="197">
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
@@ -2345,7 +2344,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1322" height="795" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
@@ -2354,9 +2352,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3982808" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.45272207" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.45272207" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" visible="true" weight="0.43982807" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" weight="0.43982807" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.25234374" />
