@@ -9,7 +9,7 @@ export default class LeftSideBar extends React.Component {
 
          <nav className="left-side-bar">
          <div className="app-logo"><h2> OAuthCater</h2></div>
-        <LeftSideBarIconBase name="Apps" iconImgSrc="/images/icons/app.png"/>
+        <LeftSideBarIconBase name="Apps" iconImgSrc="/images/icons/app.png" />
         <LeftSideBarIconBase name="Profile" iconImgSrc="/images/icons/profileIcon.png"/>
     
          </nav> 
