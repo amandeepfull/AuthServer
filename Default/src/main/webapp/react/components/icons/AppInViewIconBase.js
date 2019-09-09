@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default class AppInViewIconBase extends React.Component {
     constructor(props) {
         super(props)
