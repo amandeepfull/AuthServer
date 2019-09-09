@@ -2,9 +2,10 @@ import {SIDE_VIEW_NAV_BAR_CLICK} from '../actions/types';
 import { isNull } from 'util';
 
 let sideViewNavBarClick ={};
+let leftSideMenuClick = {}
 const initialState ={
   sideViewNavBarClick : {
-    
+    activeView : "app_info" 
   }
 };
 
