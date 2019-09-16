@@ -295,7 +295,7 @@ a:hover {
     display: none;
     border-radius: 5px;
     background-color: white;
-     height: 100px;
+     height: 63px;
     overflow-y: auto;
     z-index: 1;
 }

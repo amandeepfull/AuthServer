@@ -162,4 +162,16 @@ public class MainEndpoint extends AbstractBaseEndpoint {
     }
 
 
+    @GET
+    @Path("/logout")
+    @Produces(MediaType.TEXT_HTML)
+    public Response logout() {
+
+        if(LoginSessionManager.hasLoginSession(getSession()))
+            LoginSessionManager.clearUserSession(getSession());
+
+
+        return AppUtils.getRedirectUriResponse("/dashboard");
+    }
+
 }

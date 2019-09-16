@@ -1,6 +1,6 @@
 
 import React from 'react'
-import ProfileIcon from './icons/profile-icon'
+import ProfileIcon from '../containers/profile-icon'
 
 export default class TopNavBar extends React.Component {
 

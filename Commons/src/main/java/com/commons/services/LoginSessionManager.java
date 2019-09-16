@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.ws.rs.core.Cookie;
 import javax.ws.rs.core.NewCookie;
+import java.util.Base64;
 
 
 public class LoginSessionManager {
@@ -40,7 +41,7 @@ public class LoginSessionManager {
         HttpSession session = servletReq.getSession(true);
 
         session.setAttribute(SESSION_USER_ID, contact.getId());
-        session.setAttribute(SESSION_USER_CONTACT, ObjUtil.getJson(contact));
+        session.setAttribute(SESSION_USER_CONTACT, Base64.getEncoder().encodeToString(ObjUtil.getJson(contact).getBytes()));
         session.setMaxInactiveInterval(2 * 60 * 60);
 
         Cookie sessionCookie = new NewCookie("JSESSIONID", session.getId(), "/", null, null, 2 * 60 * 60, false);

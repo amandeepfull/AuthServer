@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/images/icons/logout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/Top-Nav-Bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/Top-Nav-Bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/profile-icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/profile-icon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/services/Ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/services/Ajax.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
@@ -80,8 +79,30 @@
       <file leaf-file-name="MainEndpoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="154" column="56" selection-start-line="154" selection-start-column="56" selection-end-line="154" selection-end-column="56" />
+            <state relative-caret-position="246">
+              <caret line="171" selection-start-line="171" selection-end-line="171" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractBaseEndpoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/baseEndpoints/AbstractBaseEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+              <folding>
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#807#808#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -89,8 +110,8 @@
       <file leaf-file-name="LoginSessionManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="137">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -108,17 +129,8 @@
       <file leaf-file-name="UtilityServices.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/services/UtilityServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appengine-web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/appengine-web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="381">
+              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -146,15 +158,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="825">
               <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -1855,8 +1858,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/baseEndpoints/AbstractBaseEndpoint.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/Application.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/KeyService.java" />
         <option value="$PROJECT_DIR$/Commons/build.gradle" />
@@ -1905,6 +1906,8 @@
         <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" />
         <option value="$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" />
       </list>
     </option>
@@ -1973,6 +1976,16 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="baseEndpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2026,6 +2039,16 @@
               <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2047,6 +2070,25 @@
               <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -2056,7 +2098,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="depe&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;dep&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;de&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;Authe&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Commons/src/main/java/com/commons/services/AuthenticationService.java&#10;dasj&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/dashboard.jsp&#10;logi&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/html/login.html&#10;ind&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/index.jsp" />
+    <property name="SearchEverywhereHistoryKey" value="da&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/dashboard.jsp&#10;depe&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;dep&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;de&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;Authe&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Commons/src/main/java/com/commons/services/AuthenticationService.java&#10;dasj&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/dashboard.jsp&#10;logi&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/html/login.html&#10;ind&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/index.jsp" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="editorconfig.notification" value="tab;" />
@@ -2434,7 +2476,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="795" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
@@ -2487,7 +2528,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/NotFoundException.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/EntityException.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/ForbiddenException.java" />
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/ForbiddenException.java">
@@ -2572,13 +2612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
           <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -2679,13 +2712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/services/UtilityServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -2718,17 +2744,42 @@
     <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/images/icons/logout.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/services/UtilityServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/baseEndpoints/AbstractBaseEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="137">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="154" column="56" selection-start-line="154" selection-start-column="56" selection-end-line="154" selection-end-column="56" />
+        <state relative-caret-position="246">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>

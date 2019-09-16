@@ -2,6 +2,7 @@
  <%
    String userId = (String)session.getAttribute("_userId");
    String token = (String)session.getAttribute("token");
+   String user = (String)session.getAttribute("_userContact");
 
    %>
 <html>
@@ -11,9 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
    <link rel="stylesheet" href="../../css/styles.css" />
 
-<script type="text/javascript">  var currentUserId = "<%=userId%>"
-var userAccessToken = "<%=token%>"
-
+<script type="text/javascript">  var currentUserId = "<%=userId%>";
+var userAccessToken = "<%=token%>";
+var currentUser = JSON.parse(decodeURIComponent(escape(window.atob("<%=user%>"))));
 </script>
 </head>
     <body>
