@@ -1,8 +1,13 @@
 import React from 'react'
+import UIActionCreater from '../../actions/ui'
+
 export default class AppInViewIconBase extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.getStyle = this.getStyle.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+        this.uiActionCreater = new UIActionCreater();
+       
         this.style = {
             activeView: {
                 display: "inline-flex",
@@ -22,10 +27,19 @@ export default class AppInViewIconBase extends React.Component {
     }
 
     render() {
-        let style = this.getStyle(this.props.activeView, this.props.id);
+        let style = this.getStyle();
         return (
-            <a className="app-in-view-bar-icon-base" id={this.props.id} style={style} href="#"><img src={this.props.iconImgSrc} width="20px" /><span className="app-in-view-icon-title" title={this.props.name} >{this.props.name}</span></a>
+            <a className="app-in-view-bar-icon-base" onClick={this.handleClick} id={this.props.id} style={style} href="#"><img id={this.props.id} src={this.props.iconImgSrc} width="20px" /><span className="app-in-view-icon-title" title={this.props.name}  id={this.props.id}>{this.props.name}</span></a>
         )
+    }
+
+    handleClick(event) {
+        
+        if(event.target.id === "" || event.target.id === "undefined")
+        return;
+
+        let action = this.uiActionCreater.SideViewNavBarClick(event.target.id);
+        this.props.dispatch(action);
     }
 
     getStyle() {

@@ -219,16 +219,13 @@ a:hover {
     margin: 10px;
 }
 
- .left-side-bar-icon-base{
-    display: flex;
-    align-items: center;
-    border: 0.5px solid  #3a415d;
- }
 
- .left-side-bar-icon-base:hover {
-     background: #d3d3d626;
- }
+
  .left-side-bar-icon-base:active {
+    background: #d3d3d626;
+}
+
+.left-side-bar-icon-base:hover{
     background: #d3d3d626;
 }
 
@@ -387,7 +384,7 @@ a.app-in-view-icon-base {
     overflow-y: auto;
 }
 
-.profile-info-view{
+.app-info-view{
     width: 80%;
     margin-left: 50px;
     margin-top: 20px;

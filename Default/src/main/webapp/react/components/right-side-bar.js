@@ -1,5 +1,5 @@
 import React from 'react'
-import AppInView from './appInView'
+import AppInView from '../containers/app-in-view'
 import AppInTopView from './App-In-top-view'
 
 export default class RightSideBar extends React.Component {
