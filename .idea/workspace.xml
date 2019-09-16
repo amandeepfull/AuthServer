@@ -2,39 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/images/icons/logout.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl$ContactDaoImplInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl$ContactDaoImplInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/constants/CommonConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/constants/CommonConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Contact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/GenericExceptionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/GenericExceptionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/objectify/OfyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/objectify/OfyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/TokenResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/TokenResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/FreeMarkerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/FreeMarkerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService$JWTServiceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService$JWTServiceInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/LoginSessionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/LoginSessionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/AppUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/AppUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInBottomView.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInBottomView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/ProfileInfo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/appInView.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/appInView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/AppInViewIconBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/AppInViewIconBase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/Left-Side-Bar-Icon-Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/Left-Side-Bar-Icon-Base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/left-side-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/left-side-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/right-side-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/right-side-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/reducers/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/reducers/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/Top-Nav-Bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/Top-Nav-Bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
@@ -105,10 +80,29 @@
       <file leaf-file-name="MainEndpoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="156">
+              <caret line="154" column="56" selection-start-line="154" selection-start-column="56" selection-end-line="154" selection-end-column="56" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginSessionManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oauthIcon.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/images/icons/oauthIcon.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="logout.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/images/icons/logout.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="UtilityServices.java" pinned="false" current-in-tab="false">
@@ -148,16 +142,6 @@
         </entry>
       </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Auth/build.gradle">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Default/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="825">
@@ -173,11 +157,6 @@
               <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appengine-web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -1951,6 +1930,123 @@
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1970,6 +2066,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.commons.model" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.commons.utils" />
     </key>
@@ -1979,19 +2078,12 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.authserver.api" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/images" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/html" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/html" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/images/icons" />
       <recent name="$PROJECT_DIR$/Api/src/main/java/com/authserver/api" />
       <recent name="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/daoImpl" />
       <recent name="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/entity" />
       <recent name="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/model" />
-      <recent name="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.commons.services" />
@@ -2000,8 +2092,12 @@
       <recent name="com.authserver.api.util" />
       <recent name="com.authserver.api.response" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.commons.model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/images/icons" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/images" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/html" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2338,6 +2434,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="795" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
@@ -2390,19 +2487,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/errorcode/EntityErrorCode.java" />
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/enums/AppMode.java" />
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/AbstractException.java" />
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/EntityException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/AbstractRuntimeException.java" />
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/IllegalArgException.java" />
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/UnauthorizedException.java" />
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/NotFoundException.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/EntityException.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/ForbiddenException.java" />
@@ -2616,10 +2700,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/images/icons/logout.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/images/icons/oauthIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/images/icons/logout.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="156">
+          <caret line="154" column="56" selection-start-line="154" selection-start-column="56" selection-end-line="154" selection-end-column="56" />
         </state>
       </provider>
     </entry>

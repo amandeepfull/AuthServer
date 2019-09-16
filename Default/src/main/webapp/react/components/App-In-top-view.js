@@ -90,4 +90,6 @@ export default class AppInTopView extends React.Component {
         document.getElementsByClassName("new-app-popup")[0].style.display = "block"
     }
 
+    
+
 }

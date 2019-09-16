@@ -286,8 +286,26 @@ a:hover {
     overflow-y: auto;
 
 }
+.profile-menu-wrapper {
+    width: 149px;
+    border: 1px solid #80808087;
+    top: -31px;
+    position: relative;
+    left: 1245px;
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+     height: 100px;
+    overflow-y: auto;
+    z-index: 1;
+}
 
 .app-option-wrapper .app-list {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-menu-wrapper .profile-menu-list {
     margin: 0;
     padding: 0;
 }
@@ -300,7 +318,19 @@ a:hover {
     border-bottom: 1px solid #80808033;
 }
 
+.profile-menu-li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    padding: 5PX;
+    border-bottom: 1px solid #80808033;
+}
+
 .app-li:hover {
+    background-color: gray
+}
+
+.profile-menu-li:hover {
     background-color: gray
 }
 
@@ -308,6 +338,13 @@ a:hover {
     margin-left: 10px;
     color: black;
 }
+
+.profile-menu-li >a {
+    margin-left: 10px;
+    color: black;
+}
+
+
 .select-app-option {
     width: 150px;
     border: 1px solid #80808087;
@@ -459,4 +496,10 @@ input[type=text], select {
     margin-left: 460px;
     color: #4e4b4b;
     font-weight: bold;
+}
+
+.profile-icon{
+    position: relative;
+    left: 630px;
+    bottom: 20px;
 }

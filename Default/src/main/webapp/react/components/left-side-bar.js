@@ -12,8 +12,8 @@ export default class LeftSideBar extends React.Component {
         return (
          <nav className="left-side-bar">
          <div className="app-logo"><h2> OAuthCater</h2></div>
-        <LeftSideBarIconBase name="Apps" iconImgSrc="/images/icons/app.png" id="apps" activeView={this.props.activeView}/>
-        <LeftSideBarIconBase name="Profile" iconImgSrc="/images/icons/profileIcon.png" id="profile" activeView={this.props.activeView}/>
+        <LeftSideBarIconBase name="Apps" iconImgSrc="/images/icons/app.png" id="apps" activeView={this.props.activeView} iconWidth="40px"/>
+        <LeftSideBarIconBase name="Profile" iconImgSrc="/images/icons/profileIcon.png" id="profile" activeView={this.props.activeView} iconWidth="40px"/>
          </nav> 
         )
       }

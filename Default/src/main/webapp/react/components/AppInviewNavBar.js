@@ -18,6 +18,7 @@ export default class AppInViewNavBar extends React.Component {
                 <AppInViewIcon name="Service Login" iconImgSrc="/images/icons/serviceLoginIcon.png" id="service_login" activeView={this.props.activeView} />
                 <AppInViewIcon name="Dashboard" iconImgSrc="/images/icons/dashboardIcon.png" id="dashboard" activeView={this.props.activeView} />
                 <AppInViewIcon name="Settings" iconImgSrc="/images/icons/settingsIcon.png" id="settings" activeView={this.props.activeView} />
+                
             </div>
         )
     }
