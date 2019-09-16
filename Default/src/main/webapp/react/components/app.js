@@ -1,6 +1,6 @@
 import React from 'react'
 import TopNavBar from "./Top-Nav-Bar"
-import MainBottomView from "./MainBottomView"
+import MainBottomView from "../containers/main-bottom-view"
 
 export default class App extends React.Component {
 
