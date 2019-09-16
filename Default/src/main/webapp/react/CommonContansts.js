@@ -5,7 +5,7 @@ static getApiUrl(path){
     }
 
     static getDefaultUrl(path){
-        return "http://localhost:8890/"+path;
+        return host+"/"+path;
     }
 }
 

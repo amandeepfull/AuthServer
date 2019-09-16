@@ -2,6 +2,7 @@
  <%
    String userId = (String)session.getAttribute("_userId");
    String token = (String)session.getAttribute("token");
+   String host = (String)session.getAttribute("host");
    String user = (String)session.getAttribute("_userContact");
 
    %>
@@ -15,6 +16,7 @@
 <script type="text/javascript">  var currentUserId = "<%=userId%>";
 var userAccessToken = "<%=token%>";
 var currentUser = JSON.parse(decodeURIComponent(escape(window.atob("<%=user%>"))));
+var host = "<%=host%>";
 </script>
 </head>
     <body>

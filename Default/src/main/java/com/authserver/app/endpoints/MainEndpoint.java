@@ -154,7 +154,7 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 
         HttpSession session = LoginSessionManager.createUserSession(servletRequest, servletResponse, contact);
         session.setAttribute("token", accessToken);
-
+        session.setAttribute("host", CommonConstants.HOST);
 
         return AppUtils.getRedirectUriResponse("/dashboard");
 

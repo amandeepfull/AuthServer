@@ -16,7 +16,7 @@ public final class CommonConstants {
     public static final String  OAUTH_CATER_AUTH_URL = "https://auth-dot-authserver-236711.appspot.com";
     public static final String OAUTH_CATER_APP_ID = "oauthcater_o9pfvoui";
     public static final String SIGN_SECRET_KEY = "9a97b0bc-bbe5-4472-88ee-13f62a56ee5d.86b53da4-0390-4d10-b7c4-021b3f5514ba" ;
-
+    public static final String HOST;
     public static final String OAUTH_CATER_AUTH_CALLBACK ;
     public static final AppMode APP_MODE ;
     static {
@@ -29,11 +29,12 @@ public final class CommonConstants {
 
 
                 OAUTH_CATER_AUTH_CALLBACK  ="https://authserver-236711.appspot.com/auth/callback";
+                HOST = "https://authserver-236711.appspot.com";
                 break;
             default:
 
-                OAUTH_CATER_AUTH_CALLBACK  ="http://localhost:8890/auth/callback";;
-
+                OAUTH_CATER_AUTH_CALLBACK  ="http://localhost:8890/auth/callback";
+                HOST = "http://localhost:8890";
                 break;
 
         }
