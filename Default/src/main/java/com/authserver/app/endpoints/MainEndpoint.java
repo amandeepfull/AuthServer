@@ -9,6 +9,7 @@ import com.commons.http.HttpMethod;
 import com.commons.http.HttpRequest;
 import com.commons.http.HttpResponse;
 import com.commons.http.UrlFetcher;
+import com.commons.response.ApiResponse;
 import com.commons.services.FreeMarkerService;
 import com.commons.services.JWTService;
 import com.commons.services.LoginSessionManager;
@@ -164,14 +165,15 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 
     @GET
     @Path("/logout")
-    @Produces(MediaType.TEXT_HTML)
     public Response logout() {
+
+        ApiResponse response = new ApiResponse();
 
         if(LoginSessionManager.hasLoginSession(getSession()))
             LoginSessionManager.clearUserSession(getSession());
 
-
-        return AppUtils.getRedirectUriResponse("/dashboard");
+        response.setOk(true);
+        return Response.ok(response).build();
     }
 
 }

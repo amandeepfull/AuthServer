@@ -38,9 +38,9 @@ export default class ProfileIcon extends React.Component {
     }
 
 
-    handleMyProfile(){
+    handleMyProfile() {
         if (event.target.name == "" || event.target.name == "undefined" || event.target.name != "my_profile")
-        return;
+            return;
 
         let action = this.uiActionCreater.LeftSideViewIconClick("profile");
         this.props.dispatch(action);
@@ -49,10 +49,12 @@ export default class ProfileIcon extends React.Component {
     handleLogout(event) {
         if (event.target.name == "" || event.target.name == "undefined" || event.target.name != "profile_menu_logout")
             return;
-        console.log("logout : "+event.target.name);
+        console.log("logout : " + event.target.name);
         this.ajax.makeRequest("GET", CommonConstants.getDefaultUrl("logout"), "").then(logoutData => {
+            if (logoutData.ok)
+                location.reload();
         })
-        location.reload();
+
     }
 
     showProfileMenu(event) {
