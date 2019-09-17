@@ -3,4 +3,4 @@ export const LEFT_SIDE_VIEW_ICON_CLICK = "LEFT_SIDE_VIEW_ICON_CLICK";
 
 
 /// Apps
-export const FETCH_ALL_USER_APPS = "FETCH_ALL_USER_APPS";
+export const ACTIVE_APP = "ACTIVE_APP";

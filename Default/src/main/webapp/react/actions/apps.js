@@ -1,11 +1,11 @@
 
 
-import {FETCH_ALL_USER_APPS} from './types'
+import {ACTIVE_APP} from './types'
 
 export class AppsCreater{
 
-  fetchAllUserApps = (payload) => {
-return { type: FETCH_ALL_USER_APPS, payload : payload };
+  updateActiveApp = (payload) => {
+return { type: ACTIVE_APP, payload : payload };
   }
 
 }

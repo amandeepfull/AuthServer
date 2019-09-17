@@ -1,24 +1,24 @@
-import {FETCH_ALL_USER_APPS} from '../actions/types';
+import {ACTIVE_APP} from '../actions/types';
 import { isNull } from 'util';
 
-let allUserApps = [];
+let activeApp = {}
 const initialState ={
-    allUserApps
+  activeApp
 };
 
 
-function getAllUserApps(payload){
-    allUsersApps = payload;
-  return allUserApps;
+function updateActiveApp(payload){
+  activeApp = payload;
+  return activeApp;
 }
 
 export default function AppsReducer(state=initialState,action){
 
   switch (action.type) {
-    case FETCH_ALL_USER_APPS:
+    case ACTIVE_APP:
       return{
         ...state,
-        allUserApps : getAllUserApps(action.payload)
+        activeApp : updateActiveApp(action.payload)
       }
     default:
       return state;

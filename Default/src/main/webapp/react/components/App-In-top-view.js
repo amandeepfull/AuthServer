@@ -1,7 +1,6 @@
 import React from 'react'
 import AppService from '../services/AppService';
 import AppsActionCreater from '../actions/apps'
-
 export default class AppInTopView extends React.Component {
 
     constructor(props) {
@@ -10,7 +9,6 @@ export default class AppInTopView extends React.Component {
         this.apps = JSON.parse(localStorage.getItem(this.allUserAppsLocalStoreKey)) || {};
         this.state = {
             allUserApps: this.apps,
-            firstAppName: ""
         }
 
         this.showAppList = this.showAppList.bind(this);
@@ -22,14 +20,16 @@ export default class AppInTopView extends React.Component {
     componentDidMount() {
         
         let keys = Object.keys(this.state.allUserApps);
+    
         if (keys.length > 0){
+           let action =  this.appActionCreater.updateActiveApp(this.state.allUserApps[keys[0]]);
+            this.props.dispatch(action);
             this.setState({
-                allUserApps: this.state.allUserApps,
-                firstAppName: this.state.allUserApps[keys[0]].name
+                allUserApps: this.state.allUserApps
             })
             return;
         }
-
+    
         this.getAllUserAppsAndUpdateState();
             
     }
@@ -38,15 +38,17 @@ export default class AppInTopView extends React.Component {
 
         this.appService.getAllUserApps(currentUserId).then(apps => {
             if (Object.keys(apps).length <= 0) {
-                this.setState({
-                    firstAppName: "No App Created"
-                })
+                
             } else {
                 let mapOfApps = this.getMapOfApps(apps);
                 this.setState({
                     allUserApps: mapOfApps,
-                    firstAppName: apps[0].name
                 })
+
+                let keys = Object.keys(mapOfApps);
+                if(keys.length > 0)
+                console.log("showing the data when no app got fetched..");
+                
                 localStorage.setItem(this.allUserAppsLocalStoreKey, JSON.stringify(mapOfApps));
             }
         }).catch((err) => {
@@ -78,7 +80,7 @@ export default class AppInTopView extends React.Component {
             <div className="app-in-top-view">
                 <div className="select-app">
                     <span className="app-text"> Select App</span>
-                    <button onClick={this.showAppList} className="select-app-option">{this.state.firstAppName}
+                    <button onClick={this.showAppList} className="select-app-option">{this.props.appsReducer.activeApp.name}
                         <img src="/images/down_arrow.jpg" />
                     </button>
                     <div className="app-option-wrapper">
@@ -86,6 +88,10 @@ export default class AppInTopView extends React.Component {
 
                             {
                                 keys.map((key) => {
+                                   
+                                    if(this.state.allUserApps[key].id == this.props.appsReducer.activeApp.id)
+                                    return;
+        
                                     return this.generateList(this.state.allUserApps[key]);
                                 })
                             }
@@ -98,7 +104,7 @@ export default class AppInTopView extends React.Component {
                 </button>
 
                 <div className="app-title">
-                    <h2>{this.state.firstAppName}</h2>
+                    <h2>{this.props.appsReducer.activeApp.name}</h2>
                 </div>
 
             </div>
