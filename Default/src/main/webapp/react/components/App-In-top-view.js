@@ -11,6 +11,7 @@ export default class AppInTopView extends React.Component {
             allUserApps: this.apps,
         }
 
+        this.handleAppListClick = this.handleAppListClick.bind(this);
         this.showAppList = this.showAppList.bind(this);
         this.showNewAppPopup = this.showNewAppPopup.bind(this);
         this.appService = new AppService();
@@ -18,62 +19,23 @@ export default class AppInTopView extends React.Component {
     }
 
     componentDidMount() {
-        
+
         let keys = Object.keys(this.state.allUserApps);
-    
-        if (keys.length > 0){
-           let action =  this.appActionCreater.updateActiveApp(this.state.allUserApps[keys[0]]);
-            this.props.dispatch(action);
+
+        if (keys.length > 0) {
+            this.updateActiveApp(this.state.allUserApps[keys[0]]);
             this.setState({
                 allUserApps: this.state.allUserApps
             })
             return;
         }
-    
+
         this.getAllUserAppsAndUpdateState();
-            
     }
 
-    getAllUserAppsAndUpdateState(){
-
-        this.appService.getAllUserApps(currentUserId).then(apps => {
-            if (Object.keys(apps).length <= 0) {
-                
-            } else {
-                let mapOfApps = this.getMapOfApps(apps);
-                this.setState({
-                    allUserApps: mapOfApps,
-                })
-
-                let keys = Object.keys(mapOfApps);
-                if(keys.length > 0)
-                console.log("showing the data when no app got fetched..");
-                
-                localStorage.setItem(this.allUserAppsLocalStoreKey, JSON.stringify(mapOfApps));
-            }
-        }).catch((err) => {
-            console.log('%c Exception while getting all users app'+err, 'background: #222; color: #bada55')
-        });
-    }
-
-    getMapOfApps(apps) {
-        var mapOfApps = {};
-        apps.map(app => {
-            mapOfApps[app.id] = app;
-        });
-
-        return mapOfApps;
-    }
-
-    generateList = (app) => {
-        return (<li className="app-li" key={app.id}>
-            <a href="#">{app.name}</a>
-        </li>)
-    }
 
     render() {
-        let firstApp;
-        let apps = this.state.allUserApps;
+
         let keys = Object.keys(this.state.allUserApps);
 
         return (
@@ -88,10 +50,10 @@ export default class AppInTopView extends React.Component {
 
                             {
                                 keys.map((key) => {
-                                   
-                                    if(this.state.allUserApps[key].id == this.props.appsReducer.activeApp.id)
-                                    return;
-        
+
+                                    if (this.state.allUserApps[key].id == this.props.appsReducer.activeApp.id)
+                                        return;
+
                                     return this.generateList(this.state.allUserApps[key]);
                                 })
                             }
@@ -110,6 +72,59 @@ export default class AppInTopView extends React.Component {
             </div>
 
         )
+    }
+
+    getAllUserAppsAndUpdateState() {
+
+        this.appService.getAllUserApps(currentUserId).then(apps => {
+            
+            if (Object.keys(apps).length <= 0) {
+
+            } else {
+            
+                let mapOfApps = this.getMapOfApps(apps);
+                this.setState({
+                    allUserApps: mapOfApps,
+                })
+
+                let keys = Object.keys(mapOfApps);
+                this.updateActiveApp(mapOfApps[keys[0]]);
+                if (keys.length < 0)
+                    console.log("showing the data when no app got fetched..");
+
+                localStorage.setItem(this.allUserAppsLocalStoreKey, JSON.stringify(mapOfApps));
+            }
+        }).catch((err) => {
+            console.log('%c Exception while getting all users app' + err, 'background: #222; color: #bada55')
+        });
+    }
+
+    updateActiveApp(app) {
+    
+        if(!app)
+        return;
+
+        let action = this.appActionCreater.updateActiveApp(app);
+        this.props.dispatch(action);
+    }
+
+    getMapOfApps(apps) {
+        var mapOfApps = {};
+        apps.map(app => {
+            mapOfApps[app.id] = app;
+        });
+
+        return mapOfApps;
+    }
+
+    generateList = (app) => {
+        return (<li className="app-li" key={app.id} id={app.id} onClick={this.handleAppListClick}>
+            <a href="#">{app.name}</a>
+        </li>)
+    }
+
+    handleAppListClick() {
+
     }
 
     showAppList() {
