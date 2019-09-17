@@ -12,7 +12,7 @@ export default class AppInTopView extends React.Component {
         }
 
         this.handleAppListClick = this.handleAppListClick.bind(this);
-        this.showAppList = this.showAppList.bind(this);
+        this.toggleAppList = this.toggleAppList.bind(this);
         this.showNewAppPopup = this.showNewAppPopup.bind(this);
         this.appService = new AppService();
         this.appActionCreater = new AppsActionCreater();
@@ -42,7 +42,7 @@ export default class AppInTopView extends React.Component {
             <div className="app-in-top-view">
                 <div className="select-app">
                     <span className="app-text"> Select App</span>
-                    <button onClick={this.showAppList} className="select-app-option">{this.props.appsReducer.activeApp.name}
+                    <button onClick={this.toggleAppList} className="select-app-option">{this.props.appsReducer.activeApp.name}
                         <img src="/images/down_arrow.jpg" />
                     </button>
                     <div className="app-option-wrapper">
@@ -61,7 +61,7 @@ export default class AppInTopView extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <button className="new-app-btn" onClick={this.showNewAppPopup}>
+                <button className="new-app-btn" id="new-app-pop-btn" onClick={this.showNewAppPopup}>
                     <img src="/images/icons/plusIcon.png" />New App
                 </button>
 
@@ -89,8 +89,8 @@ export default class AppInTopView extends React.Component {
 
                 let keys = Object.keys(mapOfApps);
                 this.updateActiveApp(mapOfApps[keys[0]]);
-                if (keys.length < 0)
-                    console.log("showing the data when no app got fetched..");
+                if (keys.length <= 0)
+                    document.getElementById("new-app-pop-btn").click();
 
                 localStorage.setItem(this.allUserAppsLocalStoreKey, JSON.stringify(mapOfApps));
             }
@@ -119,15 +119,16 @@ export default class AppInTopView extends React.Component {
 
     generateList = (app) => {
         return (<li className="app-li" key={app.id} id={app.id} onClick={this.handleAppListClick}>
-            <a href="#">{app.name}</a>
+            <a href="#" id={app.id}>{app.name}</a>
         </li>)
     }
 
-    handleAppListClick() {
-
+    handleAppListClick(event) {
+        this.updateActiveApp(this.state.allUserApps[event.target.id]);
+        this.toggleAppList();
     }
 
-    showAppList() {
+    toggleAppList() {
         const applistWrapperDisplayStyle = document.getElementsByClassName("app-option-wrapper")[0].style.display;
         if (applistWrapperDisplayStyle === "")
             document.getElementsByClassName("app-option-wrapper")[0].style.display = "block"
