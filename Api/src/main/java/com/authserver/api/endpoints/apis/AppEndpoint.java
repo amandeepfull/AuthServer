@@ -56,12 +56,9 @@ public class AppEndpoint extends AbstractBaseEndpoint {
 
     @GET
     @Path("/user/{userId}")
-    public Response getUserApp(@PathParam("userId") String userId) throws ForbiddenException {
+    public Response getUserApp(@PathParam("userId") String userId)  {
 
         ApiResponse response = new ApiResponse();
-
-        if(response == null)
-            throw new ForbiddenException("you are not ldjlfjsdjf");
 
         List<App> apps = new ArrayList<>();
 

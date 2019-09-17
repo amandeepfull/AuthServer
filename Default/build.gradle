@@ -34,7 +34,7 @@ appengine {
     }
 
     deploy {
-        version = 1
+        version = 2
         projectId = "authserver-236711"
         stopPreviousVersion = false
         promote = false

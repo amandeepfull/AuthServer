@@ -1,6 +1,6 @@
 import React from 'react'
 import AppInView from '../containers/app-in-view'
-import AppInTopView from './App-In-top-view'
+import AppInTopView from '../containers/app-in-top-view'
 import NewAppPopup from './popups/NewAppPopup'
 export default class Apps extends React.Component {
 

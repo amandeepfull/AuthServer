@@ -11,6 +11,7 @@ import com.commons.exception.mapper.*;
 import com.commons.objectify.OfyService;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
+import org.jboss.resteasy.plugins.interceptors.CorsFilter;
 
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -65,7 +66,12 @@ public class AppConfig extends Application {
         singletons.add(new GenericExceptionMapper());
 
         // for now allowing all based on requested origins
+        CorsFilter cors = new CorsFilter();
+        cors.getAllowedOrigins().add("*");
+        cors.setCorsMaxAge(1728000);
+        cors.setAllowCredentials(false);
 
+        singletons.add(cors);
         return singletons;
     }
 }

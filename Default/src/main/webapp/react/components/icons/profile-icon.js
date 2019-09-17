@@ -32,8 +32,6 @@ export default class ProfileIcon extends React.Component {
 
             </div>
 
-
-
         )
     }
 
