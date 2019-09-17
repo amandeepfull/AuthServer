@@ -27,8 +27,14 @@ export default class AppInTopView extends React.Component {
                 allUserApps: this.state.allUserApps,
                 firstAppName: this.state.allUserApps[keys[0]].name
             })
+            return;
         }
+
+        this.getAllUserAppsAndUpdateState();
             
+    }
+
+    getAllUserAppsAndUpdateState(){
 
         this.appService.getAllUserApps(currentUserId).then(apps => {
             if (Object.keys(apps).length <= 0) {
@@ -44,7 +50,7 @@ export default class AppInTopView extends React.Component {
                 localStorage.setItem(this.allUserAppsLocalStoreKey, JSON.stringify(mapOfApps));
             }
         }).catch((err) => {
-
+            console.log('%c Exception while getting all users app'+err, 'background: #222; color: #bada55')
         });
     }
 
