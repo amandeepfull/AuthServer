@@ -54,7 +54,7 @@ export default class AppInTopView extends React.Component {
                                     if (this.state.allUserApps[key].id == this.props.appsReducer.activeApp.id)
                                         return;
 
-                                    return this.generateList(this.state.allUserApps[key]);
+                                    return this.generateAppList(this.state.allUserApps[key]);
                                 })
                             }
 
@@ -95,7 +95,7 @@ export default class AppInTopView extends React.Component {
                 localStorage.setItem(this.allUserAppsLocalStoreKey, JSON.stringify(mapOfApps));
             }
         }).catch((err) => {
-            console.log('%c Exception while getting all users app' + err, 'background: #222; color: #bada55')
+            console.error("Exception while fetching apps and updating state : "+err);
         });
     }
 
@@ -117,7 +117,7 @@ export default class AppInTopView extends React.Component {
         return mapOfApps;
     }
 
-    generateList = (app) => {
+    generateAppList = (app) => {
         return (<li className="app-li" key={app.id} id={app.id} onClick={this.handleAppListClick}>
             <a href="#" id={app.id}>{app.name}</a>
         </li>)

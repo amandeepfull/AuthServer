@@ -7,17 +7,16 @@ class AppService {
 
     getAllUserApps(userId) {
         return new Promise((resolve, reject) => {
-            if (!userId || typeof userId != "string")
-                reject("Invalid userId");
+            if (!userId || typeof userId != "string"){
+                reject("Invalid userId for fetching all apps for user");
+            }
 
-            this.ajax.makeRequest("GET", CommConstants.getApiUrl("api/v1/app/user/"+ userId) , "").then((resp) => {
-
-                if (!resp.ok)
-                    reject(resp.ok);
-
-                if (resp.ok)
-                    resolve(resp.data.apps);
-            });
+            this.ajax.makeRequest("GET", CommConstants.getApiUrl("api/v1/app/user/"+userId), "").then((data) => {
+                resolve(data.apps);
+            }).catch((err) => {
+                console.error("Exception AppService:getAllUserApps : ",err);
+            }
+            );
         })
     }
 }

@@ -1,31 +1,50 @@
 
-
-class Ajax {
-
+export default class Ajax {
+  constructor() {
+    this.xhttp = new XMLHttpRequest();
+  }
   makeRequest(method, url, data) {
-    return new Promise((resolve, reject) => {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4) {
-          var resp = JSON.parse(this.responseText);
 
-          
-          resolve(resp);
+    return new Promise((resolve, reject) => {
+      this.xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          const apiResponse = JSON.parse(this.responseText);
+          if (!Ajax.isSuccessFull(this.status)) {
+            reject(new ApiRejectResponse(this.status, apiResponse.errors[0].code, apiResponse.errors[0].message).json());
+          }
+          resolve(apiResponse.data);
         }
       };
 
       console.log("url : " + url);
-      xhttp.open(method, url, true);
-
+      this.xhttp.open(method, url, true);
       if (data) {
-        xhttp.setRequestHeader("Content-type", "application/json");
-        xhttp.send(JSON.stringify(data));
+        this.xhttp.setRequestHeader("Content-type", "application/json");
+        this.xhttp.send(JSON.stringify(data));
       } else {
-        xhttp.send();
+        this.xhttp.send();
       }
+    });
+  }
 
-    }).catch(alert);
+  static isSuccessFull(status) {
+    return (status >= 200 && status < 300) ? true : false;
   }
 }
 
-export default Ajax;
+class ApiRejectResponse {
+  constructor(status, code, msg) {
+    this.status = status || 0;
+    this.msg = msg || "api failed to respond";
+    this.code = code;
+  }
+
+  json() {
+    var resp = {
+      status: this.status,
+      code: this.code,
+      msg: this.msg,
+    }
+    return resp;
+  }
+}
