@@ -1,30 +1,63 @@
 
 export default class Ajax {
   constructor() {
-    this.xhttp = new XMLHttpRequest();
+    this.xhttp = null;
   }
-  makeRequest(method, url, data) {
-
+  static fetch(url, request) {
+    this.xhttp = new XMLHttpRequest();
     return new Promise((resolve, reject) => {
+
+      const method = request.method;
+      const payload = request.payload;
+
+      if (!url || !request || !method) {
+        reject("Invalid Parameters : url : {" + url + "} and request : {" + JSON.stringify(request) + "}");
+      }
+
+      if (method != "GET" && !payload) {
+        reject("Payload required with method : " + method);
+      }
+
+      console.log("Api call : url : " + url);
+      AjaxUtil.openStateAndSend(url, payload, request.headers, method, this.xhttp);
+
       this.xhttp.onreadystatechange = function () {
         if (this.readyState == 4) {
           const apiResponse = JSON.parse(this.responseText);
-          if (!Ajax.isSuccessFull(this.status)) {
+          if (!AjaxUtil.isSuccessFull(this.status)) {
             reject(new ApiRejectResponse(this.status, apiResponse.errors[0].code, apiResponse.errors[0].message).json());
           }
           resolve(apiResponse.data);
         }
       };
-
-      console.log("url : " + url);
-      this.xhttp.open(method, url, true);
-      if (data) {
-        this.xhttp.setRequestHeader("Content-type", "application/json");
-        this.xhttp.send(JSON.stringify(data));
-      } else {
-        this.xhttp.send();
-      }
     });
+  }
+
+
+}
+
+class AjaxUtil {
+
+  static openStateAndSend = (url, payload, headers, method, xhttp) => {
+
+    xhttp.open(method, url, true);
+    if (method)
+      AjaxUtil.addHeaders(headers, xhttp);
+
+    if (payload) {
+      xhttp.send(JSON.stringify(payload));
+    } else {
+      xhttp.send();
+    }
+  }
+
+  static addHeaders = (headers, xhttp) => {
+
+    if (!headers)
+      return;
+    Object.keys(headers).map((headerKey) => {
+      xhttp.setRequestHeader(headerKey, headers[headerKey]);
+    })
   }
 
   static isSuccessFull(status) {
@@ -32,7 +65,7 @@ export default class Ajax {
   }
 }
 
-class ApiRejectResponse {
+export class ApiRejectResponse {
   constructor(status, code, msg) {
     this.status = status || 0;
     this.msg = msg || "api failed to respond";
@@ -48,3 +81,4 @@ class ApiRejectResponse {
     return resp;
   }
 }
+
