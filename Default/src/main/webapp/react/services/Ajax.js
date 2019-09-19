@@ -14,8 +14,8 @@ export default class Ajax {
         if (this.readyState == 4) {
           const apiResponse = JSON.parse(this.responseText);
           if (!AjaxUtil.isSuccessFull(this.status)) {
-            let errorCode = apiResponse.error ? apiResponse.error : "";
-            let errorMsg = errorMsg ? errorMsg : "";
+            let errorCode = apiResponse.errors ? apiResponse.errors[0].code : "";
+            let errorMsg = errorCode ? apiResponse.errors[0].message : "";
             reject(new ApiRejectResponse(this.status, errorCode, errorMsg).json());
           }
           resolve(apiResponse.data);
@@ -35,8 +35,8 @@ export default class Ajax {
         if (this.readyState == 4) {
           const apiResponse = JSON.parse(this.responseText);
           if (!AjaxUtil.isSuccessFull(this.status)) {
-            let errorCode = apiResponse.error ? apiResponse.error : "";
-            let errorMsg = errorMsg ? errorMsg : "";
+            let errorCode = apiResponse.errors ? apiResponse.errors[0].code : "";
+            let errorMsg = errorCode ? apiResponse.errors[0].message : "";
             reject(new ApiRejectResponse(this.status, errorCode , errorMsg).json());
           }
           resolve(this);

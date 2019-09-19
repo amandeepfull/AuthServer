@@ -8,7 +8,7 @@ class AppService {
                 reject("Invalid userId for fetching all apps for user");
             }
 
-            Ajax.fetch(CommConstants.getApiUrl("api/v1/app/user/"+userId), {
+            Ajax.fetch(CommConstants.getApiUrl("api/v1/app/user/"), {
                         method : "GET",
                         headers:{
                             "Content-Type" : "application/json"
