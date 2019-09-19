@@ -18,7 +18,7 @@ export default class Ajax {
             let errorMsg = errorCode ? apiResponse.errors[0].message : "";
             reject(new ApiRejectResponse(this.status, errorCode, errorMsg).json());
           }
-          resolve(apiResponse.data);
+          resolve(apiResponse);
         }
       };
     });
