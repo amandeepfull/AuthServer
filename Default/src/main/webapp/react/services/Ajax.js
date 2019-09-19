@@ -7,25 +7,16 @@ export default class Ajax {
     this.xhttp = new XMLHttpRequest();
     return new Promise((resolve, reject) => {
 
-      const method = request.method;
-      const payload = request.payload;
-
-      if (!url || !request || !method) {
-        reject("Invalid Parameters : url : {" + url + "} and request : {" + JSON.stringify(request) + "}");
-      }
-
-      if (method != "GET" && !payload) {
-        reject("Payload required with method : " + method);
-      }
-
-      console.log("Api call : url : " + url);
-      AjaxUtil.openStateAndSend(url, payload, request.headers, method, this.xhttp);
+      AjaxValidater.validateAjaxRequest(url, request);
+      AjaxUtil.openStateAndSend(url, request.payload, request.headers, request.method, this.xhttp);
 
       this.xhttp.onreadystatechange = function () {
         if (this.readyState == 4) {
           const apiResponse = JSON.parse(this.responseText);
           if (!AjaxUtil.isSuccessFull(this.status)) {
-            reject(new ApiRejectResponse(this.status, apiResponse.errors[0].code, apiResponse.errors[0].message).json());
+            let errorCode = apiResponse.error ? apiResponse.error : "";
+            let errorMsg = errorMsg ? errorMsg : "";
+            reject(new ApiRejectResponse(this.status, errorCode, errorMsg).json());
           }
           resolve(apiResponse.data);
         }
@@ -33,17 +24,35 @@ export default class Ajax {
     });
   }
 
+  static stream(url, request){
+    this.xhttp = new XMLHttpRequest();
+    return new Promise((resolve, reject) =>{
+     
+      AjaxValidater.validateAjaxRequest(url, request);
+      AjaxUtil.openStateAndSend(url, request.payload, request.headers, request.method, this.xhttp);
+
+      this.xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          const apiResponse = JSON.parse(this.responseText);
+          if (!AjaxUtil.isSuccessFull(this.status)) {
+            let errorCode = apiResponse.error ? apiResponse.error : "";
+            let errorMsg = errorMsg ? errorMsg : "";
+            reject(new ApiRejectResponse(this.status, errorCode , errorMsg).json());
+          }
+          resolve(this);
+        }
+      };
+    })
+  }
 
 }
 
 class AjaxUtil {
 
   static openStateAndSend = (url, payload, headers, method, xhttp) => {
-
     xhttp.open(method, url, true);
     if (method)
       AjaxUtil.addHeaders(headers, xhttp);
-
     if (payload) {
       xhttp.send(JSON.stringify(payload));
     } else {
@@ -52,7 +61,6 @@ class AjaxUtil {
   }
 
   static addHeaders = (headers, xhttp) => {
-
     if (!headers)
       return;
     Object.keys(headers).map((headerKey) => {
@@ -62,6 +70,25 @@ class AjaxUtil {
 
   static isSuccessFull(status) {
     return (status >= 200 && status < 300) ? true : false;
+  }
+}
+
+class AjaxValidater{
+
+  static validateAjaxRequest(url, request){
+
+    if (!url || !request || !request.method) {
+      throw new Error("Invalid Parameters : url : {" + url + "} and request : {" + JSON.stringify(request) + "}");
+    }
+
+    if (request.method != "GET" && !request.payload) {
+      throw new Error("Payload required with method : " + request.method);
+    }
+
+    if(request.method != "GET" && (!request.headers || request.headers["Content-Type"])){
+      throw new Error("Header : Content-Type cannot be empty with "+request.method+" request");
+    }
+ 
   }
 }
 
