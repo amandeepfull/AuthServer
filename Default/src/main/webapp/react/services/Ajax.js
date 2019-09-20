@@ -1,4 +1,4 @@
-
+ 
 export default class Ajax {
   constructor() {
     this.xhttp = null;
@@ -27,21 +27,9 @@ export default class Ajax {
   static stream(url, request){
     this.xhttp = new XMLHttpRequest();
     return new Promise((resolve, reject) =>{
-     
       AjaxValidater.validateAjaxRequest(url, request);
       AjaxUtil.openStateAndSend(url, request.payload, request.headers, request.method, this.xhttp);
-
-      this.xhttp.onreadystatechange = function () {
-        if (this.readyState == 4) {
-          const apiResponse = JSON.parse(this.responseText);
-          if (!AjaxUtil.isSuccessFull(this.status)) {
-            let errorCode = apiResponse.errors ? apiResponse.errors[0].code : "";
-            let errorMsg = errorCode ? apiResponse.errors[0].message : "";
-            reject(new ApiRejectResponse(this.status, errorCode , errorMsg).json());
-          }
-          resolve(this);
-        }
-      };
+      resolve(this.xhttp);
     })
   }
 
@@ -108,4 +96,3 @@ export class ApiRejectResponse {
     return resp;
   }
 }
-
